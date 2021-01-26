@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;            
+        }
+        .parent{
+            width: 100%;
+            height: 10vh;
+            position: relative;
+            font-size: 20px;
+        }
+        .navbar{
+            width: 100%;
+            height: 15vh;
+            background: #41295a;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+        .box{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 1;  /* for demo purpose  */
+    }
+    .stack-top{
+        z-index: 9;
+        margin-top: 50px; /* for demo purpose  */
+    }
+    .statusbar{
+        font-weight: 350;
+        background-color: white;
+        width: 60%;
+        display: grid;
+        align-self: center;
+        column-gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 3px 10px rgb(102, 102, 102, 2.9);
+    }
+    .stats{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 12vh;
+    }
+    .navbar{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: white;
+        align-items: center;
+    }
+    .lat,.lon,.vel{
+        align-self: center;
+    }
+    .mapbox{
+        width: 100%;
+        margin: auto;
+        z-index: 1;
+        min-height: 85vh;
+        margin-top: 31px;
+        box-shadow: 0 3px 10px rgb(102, 102, 102, 2.9);
+    }
+    .logo, .image{
+        padding: 30px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+    span{
+        font-weight: 400;
+    }
+    .image{
+        font-size: 15px;
+        font-weight: 100;
+    }
